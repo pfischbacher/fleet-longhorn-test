@@ -1,0 +1,25 @@
+defaultNamespace: longhorn-system
+name: longhorn
+
+helm:
+  releaseName: longhorn
+  repo: https://charts.rancher.io
+  chart: longhorn
+  version: 103.5.0+up1.8.1
+
+labels:
+  app: longhorn
+
+targetCustomizations:
+- name: cluster-a
+#  helm:
+#    valuesFiles:
+#    - common/rancher/values.103.5.0+up1.8.1.yaml
+  clusterGroup: fleet-test-a
+
+- name: cluster-b
+#  helm:
+#    valuesFiles:
+    - common/rancher/values.103.5.0+up1.8.1.yaml
+  clusterGroup: fleet-test-b
+
