@@ -12,13 +12,13 @@ labels:
 
 targetCustomizations:
 - name: cluster-a
-#  helm:
-#    valuesFiles:
-#    - common/rancher/values.103.5.0+up1.8.1.yaml
+  helm:
+    valuesFiles:
+    - longhorn-test-values.yaml
   clusterGroup: fleet-test-a
 
 - name: cluster-b
-#  helm:
-#    valuesFiles:#
-#    - common/rancher/values.103.5.0+up1.8.1.yaml
+  helm:
+    valuesFiles:#
+    - longhorn-test-values.yaml
   clusterGroup: fleet-test-b
