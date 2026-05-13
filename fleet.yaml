@@ -22,6 +22,3 @@ targetCustomizations:
     valuesFiles:
     - longhorn-test-values.yaml
   clusterGroup: fleet-test-b
-
-dependsOn:
-  - name: longhorn-crd 
