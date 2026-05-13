@@ -1,0 +1,7 @@
+defaultNamespace: longhorn-system
+
+helm:
+  repo: https://charts.longhorn.io
+  chart: longhorn-crd
+  version:  103.5.0+up1.8.1
+  releaseName: longhorn-crd
