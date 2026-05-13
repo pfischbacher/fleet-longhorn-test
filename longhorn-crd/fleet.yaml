@@ -6,3 +6,13 @@ helm:
   chart: longhorn-crd
   version:  103.5.0+up1.8.1
   releaseName: longhorn-crd
+
+labels:
+  app: longhorn-crd
+
+targetCustomizations:
+- name: cluster-a
+  clusterGroup: fleet-test-a
+
+- name: cluster-b
+  clusterGroup: fleet-test-b
