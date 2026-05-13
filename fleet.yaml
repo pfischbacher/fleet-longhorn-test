@@ -19,7 +19,6 @@ targetCustomizations:
 
 - name: cluster-b
 #  helm:
-#    valuesFiles:
-    - common/rancher/values.103.5.0+up1.8.1.yaml
+#    valuesFiles:#
+#    - common/rancher/values.103.5.0+up1.8.1.yaml
   clusterGroup: fleet-test-b
-
