@@ -1,4 +1,5 @@
 defaultNamespace: longhorn-system
+name: longhorn-crd
 
 helm:
   repo: https://charts.longhorn.io
